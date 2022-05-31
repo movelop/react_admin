@@ -12,20 +12,14 @@ const ThemeSettings = () => {
     <div className='bg-half-transparent w-screen fixed nav-item top-0 right-0'>
       <div className="float-right h-screen dark:text-gray-200 bg-white dark:bg-[#484B52] w-400">
         <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
-          <TooltipComponent
-            content="Settings"
-            position="Top"
-          >
             <button
               type="button"
               onClick={() => setThemeSettings(false)}
-              style={{ background: currentColor, borderRadius: '10px' }}
-              className=" text-lg text-white px-6 py-2 hover:drop-shadow-xl hover:bg-light-gray"
+              style={{ background: currentColor, }}
+              className=" text-lg text-white px-6 py-2 hover:drop-shadow-xl hover:bg-light-gray rounded-md"
             >
               Save
             </button>
-
-          </TooltipComponent>
         </div>
         <div className="flex justify-between items-center p-4 ml-4">
           <p className="font-semibold text-lg">Settings</p>
